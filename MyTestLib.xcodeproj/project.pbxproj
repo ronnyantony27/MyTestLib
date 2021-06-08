@@ -16,6 +16,7 @@
 		5F405D38266E5C8C0008B8DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F405D36266E5C8C0008B8DC /* Main.storyboard */; };
 		5F405D3A266E5C900008B8DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F405D39266E5C900008B8DC /* Assets.xcassets */; };
 		5F405D3D266E5C900008B8DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F405D3B266E5C900008B8DC /* LaunchScreen.storyboard */; };
+		5F914ED2266F4C9F00AAAF66 /* MyTestLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F914ED1266F4C9F00AAAF66 /* MyTestLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		5F405D39266E5C900008B8DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F405D3C266E5C900008B8DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F405D3E266E5C900008B8DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F914ED1266F4C9F00AAAF66 /* MyTestLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTestLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				5F405D13266E5B370008B8DC /* MyTestLib.h */,
 				5F405D14266E5B370008B8DC /* Info.plist */,
+				5F914ED1266F4C9F00AAAF66 /* MyTestLib.swift */,
 			);
 			path = MyTestLib;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				TargetAttributes = {
 					5F405D0F266E5B370008B8DC = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					5F405D18266E5B380008B8DC = {
 						CreatedOnToolsVersion = 12.5;
@@ -262,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F914ED2266F4C9F00AAAF66 /* MyTestLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +443,7 @@
 		5F405D25266E5B380008B8DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -455,6 +461,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -463,6 +470,7 @@
 		5F405D26266E5B380008B8DC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -488,6 +496,7 @@
 		5F405D28266E5B380008B8DC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyTestLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -505,6 +514,7 @@
 		5F405D29266E5B380008B8DC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyTestLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
