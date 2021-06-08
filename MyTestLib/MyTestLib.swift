@@ -11,6 +11,10 @@ public final class MyTestLib {
 
     let name = "MyTestLib"
     
+    public init() {
+        
+    }
+    
     public func add(a: Int, b: Int) -> Int {
         return a + b
     }
